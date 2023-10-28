@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+h2{
+    margin: 5px;
+}
+#thecal{
+    height: 350px;
+    width: 350px;
+    background-color: #264653;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 25px;
+}
+#incal{
+    height: 250px;
+    width: 350px;
+    background-color: #c9e4de;
+    /* ffe5d9  d8e2dc*/
+    border-radius: 15px;
+}
+.numbox{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+#go{
+    height: 46px;
+    width: 45px;
+    background-color: #c1ff9b;
+    border: none;
+    border-radius: 3px;
+}
+#clear{
+    height: 46px;
+    width: 45px;
+    background-color: #f48498;
+    border: none;
+    border-radius: 3px;
+}
+
