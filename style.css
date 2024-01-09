@@ -2,16 +2,19 @@
 body{
     font-family: 'Fira Sans', sans-serif;
     color: #313b49;
+    height: 100%;
+
 }
 h2{
     margin: 5px;
     font-size: 20px;
 }
 #box1{
-    border: 0px solid darkcyan;
-    height: 500px;
-    width: 30%;
-    float: left;
+    position: absolute;
+    border: 1px solid darkcyan;
+    top: 15px;
+    bottom: 15px;
+    width: 20%;
     padding: 30px;
 
 }
@@ -20,10 +23,12 @@ h2{
 }
 #box2{
     align-items: center;
-    border: 0px solid tomato;
-    height: 500px;
-    width: 59%;
-    float: left;
+    border: 1px solid tomato;
+    width: 69%;
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
     padding: 30px;
 }
 #thecal{
@@ -62,13 +67,14 @@ h2{
     border-radius: 15px;
     padding: 10px;
     left: 50%;
-    /* top: 83%; */
+    top: 500px;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #calandbot{
     top: 5%;
-    border: 1px solid burlywood;
+    border: 0px solid burlywood;
+    height: inherit;
 }
 .numbox{
     width: 125px;
