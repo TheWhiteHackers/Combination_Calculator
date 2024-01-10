@@ -34,12 +34,14 @@ h2{
 #thecal{
     height: 420px;
     width: 350px;
-    /* top: 5%; */
+    top: 50%;
+    margin-top: -280px;
     background-color: #313b49;
     border-radius: 15px;
     padding: 10px;
     padding-top: 25px;
     left: 50%;
+    margin-left: -175px;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -66,7 +68,10 @@ h2{
     background-color: #313b49;
     border-radius: 15px;
     padding: 10px;
+    top: 50%;
+    margin-top: 160px;
     left: 50%;
+    margin-left: -175px;
     top: 500px;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
