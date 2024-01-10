@@ -83,7 +83,9 @@ h2{
 .anss{
     width: 300px;
     padding: 10px 5px;
-    background-color: #475569;
+    border: 4px solid #475569;
+    border-radius: 50px;
+    margin: 3px 0px 3px 0px;
     text-align: center;
 }
 #calandbot{
