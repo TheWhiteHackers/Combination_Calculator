@@ -57,6 +57,10 @@ h2{
     /* ffe5d9  d8e2dc*/
     border-radius: 15px;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    overflow-y: scroll;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
 }
 #contain1{
     border: 0px solid palevioletred;
@@ -75,6 +79,12 @@ h2{
     top: 500px;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.anss{
+    width: 300px;
+    padding: 10px 5px;
+    background-color: #475569;
+    text-align: center;
 }
 #calandbot{
     top: 5%;
