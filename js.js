@@ -13,6 +13,9 @@
 //     }
 // }
 
+function clickedinfo(){
+    console.log("make a popup and explain more stuff");
+}
 
 
 // Get the HTML elements for sumbox and sizebox
