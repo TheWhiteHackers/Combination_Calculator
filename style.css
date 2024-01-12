@@ -13,9 +13,15 @@ h3{
     margin: 10px;
 }
 #shadow{
-    top: 100%;
-    bottom:100%;
-    background-color: #00000075;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #000000a5;
+    z-index: 100;
+    position: absolute;
 }
 #box1{
     position: absolute;
@@ -120,7 +126,12 @@ h3{
     padding: 10px;
     border: 5px solid #313b49;
     border-radius: 10px;
-    outline: 3px solid salmon;
+    outline: 3px solid rgb(211, 139, 38);
+    z-index: 10000;
+    background-color: #FFF;
+    height: 250px;
+    width: 400px;
+    position: absolute;
 }
 .numbox{
     width: 125px;

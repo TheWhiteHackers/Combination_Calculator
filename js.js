@@ -16,13 +16,16 @@ window.onload=start();
 
 function start(){
     document.getElementById("moreinfo").style.display="none";
-
+    document.getElementById("shadow").style.display="none";
 }
 
 
 
 function clickedinfo(){
     console.log("make a popup and explain more stuff");
+    document.getElementById("moreinfo").style.display="block";
+    document.getElementById("shadow").style.display="block";
+
 }
 
 
