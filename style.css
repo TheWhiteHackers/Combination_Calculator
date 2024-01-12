@@ -44,11 +44,14 @@ h3{
     width: 350px;
     top: 50%;
     margin-top: -280px;
+    top: 50%;
+    margin-top: -280px;
     background-color: #313b49;
     border-radius: 15px;
     padding: 10px;
     padding-top: 25px;
     left: 50%;
+    margin-left: -175px;
     margin-left: -175px;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -63,8 +66,14 @@ h3{
     width: 350px;
     background-color: #FFF;
     /* cce2dd ffe5d9  d8e2dc*/
+    background-color: #FFF;
+    /* cce2dd ffe5d9  d8e2dc*/
     border-radius: 15px;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    overflow-y: scroll;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
     overflow-y: scroll;
     align-items: center;
     display: flex;
@@ -82,7 +91,11 @@ h3{
     padding: 10px;
     top: 50%;
     margin-top: 160px;
+    top: 50%;
+    margin-top: 160px;
     left: 50%;
+    margin-left: -175px;
+    top: 500px;
     margin-left: -175px;
     top: 500px;
     position: absolute;
