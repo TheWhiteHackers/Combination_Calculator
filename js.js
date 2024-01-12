@@ -19,8 +19,6 @@ function start(){
     document.getElementById("shadow").style.display="none";
 }
 
-
-
 function clickedinfo(){
     console.log("make a popup and explain more stuff");
     document.getElementById("moreinfo").style.display="block";
@@ -28,6 +26,10 @@ function clickedinfo(){
 
 }
 
+function closepop(){
+    document.getElementById("moreinfo").style.display="none";
+    document.getElementById("shadow").style.display="none";
+}
 
 // Get the HTML elements for sumbox and sizebox
 let sumbox = document.getElementById("sumbox");
