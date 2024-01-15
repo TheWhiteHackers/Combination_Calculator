@@ -36,6 +36,7 @@ function closepop(){
 let sumbox = document.getElementById("sumbox");
 let sizebox = document.getElementById("sizebox");
 let incal = document.getElementById("incal");
+let totalResultsSpan = document.getElementById("totalresults");
 let switchInput = document.querySelector(".switch input");
 let clearButton = document.getElementById("clear");
 
@@ -85,11 +86,16 @@ function cal() {
         div.textContent = combination.join(', ');
         incal.appendChild(div);
     });
+
+    // Display the total number of results
+    totalResultsSpan.textContent = result.length;
 }
 
 // Event listener for the "clear" button
 clearButton.addEventListener("click", function() {
-    // Clear content in 'incal' div
+    // Clear content in 'incal' div and reset total results span
     incal.innerHTML = '';
+    totalResultsSpan.textContent = '';
 });
+
 
