@@ -20,7 +20,6 @@ function start(){
 }
 
 function clickedinfo(){
-    console.log("make a popup and explain more stuff");
     document.getElementById("moreinfo").style.display="block";
     document.getElementById("shadow").style.display="block";
 
@@ -31,10 +30,14 @@ function closepop(){
     document.getElementById("shadow").style.display="none";
 }
 
-// Get the HTML elements for sumbox and sizebox
+
+
+// Get the HTML elements for sumbox, sizebox, and the switch
 let sumbox = document.getElementById("sumbox");
 let sizebox = document.getElementById("sizebox");
 let incal = document.getElementById("incal");
+let switchInput = document.querySelector(".switch input");
+let clearButton = document.getElementById("clear");
 
 // Function to calculate combinations
 function cal() {
@@ -46,6 +49,9 @@ function cal() {
         alert("Please fill out valid numbers for both 'sum' and 'size' boxes.");
         return;
     }
+
+    // Clear previous content in 'incal' div
+    incal.innerHTML = '';
 
     let set_arr = [];
     let result = [];
@@ -59,6 +65,10 @@ function cal() {
 
         // Loop to find combinations
         for (let i = start; i <= targetSum && i <= remainingSum; i++) {
+            if (!switchInput.checked && currentCombination.includes(i)) {
+                continue; // Skip repeating numbers when the switch is off
+            }
+
             currentCombination.push(i); // Add the number to the combination
             findCombination(i, remainingSum - i, currentCombination); // Recursively find next numbers
             currentCombination.pop(); // Remove the last element to backtrack
@@ -68,7 +78,7 @@ function cal() {
     // Start finding combinations
     findCombination(1, targetSum, set_arr);
 
-    // Log the combinations to the console
+    // Display the combinations in the 'incal' div
     result.forEach(combination => {
         let div = document.createElement("div");
         div.className = "anss";
@@ -76,3 +86,10 @@ function cal() {
         incal.appendChild(div);
     });
 }
+
+// Event listener for the "clear" button
+clearButton.addEventListener("click", function() {
+    // Clear content in 'incal' div
+    incal.innerHTML = '';
+});
+

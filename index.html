@@ -37,9 +37,9 @@
         <center>
         <h2>The Calculator</h2>
         </center>
-        <input type="number" id="quantity" placeholder="sum" class="numbox" min="1" max="9999">
-        <input type="number" id="quantity" placeholder="size" class="numbox" min="1" max="999">
-        <input type="button" value="GO!" id="go">
+        <input type="number" id="sumbox" placeholder="sum" class="numbox" min="1" max="9999">
+        <input type="number" id="sizebox" placeholder="size" class="numbox" min="1" max="999">
+        <input type="button" value="GO!" id="go" onclick="cal()">
 
         <br>
         <br>
@@ -63,6 +63,8 @@
             </div>
             
         </div> 
+
+        <div id="resultcontain">The Number of Results is: <span id="totalresults"></span></div>
 </div> 
 </div>
 
@@ -70,7 +72,7 @@
     <h2>More Info</h2>
     <h4>The bigger the numbers the longer the wait time</h4>
     <h4>If you get a "page unresponsive" error click just wait and it will work</h4>
-    <h4 style="color: sandybrown;">Enjoy!</h4>
+    <h4 style="color: rgb(67, 233, 83);">Enjoy!</h4>
 
     <input type="button" value="OKAY" onclick="closepop()">
 </div>
