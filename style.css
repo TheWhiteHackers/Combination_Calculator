@@ -25,7 +25,7 @@ h3{
 }
 #box1{
     position: absolute;
-    border: 1px solid darkcyan;
+    /* border: 1px solid darkcyan; */
     top: 15px;
     bottom: 15px;
     width: 30%;
@@ -37,7 +37,7 @@ h3{
 }
 #box2{
     align-items: center;
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
     width: 59%;
     position: absolute;
     top: 15px;
@@ -165,7 +165,7 @@ h3{
     cursor: pointer;
 }
 #resultcontain{
-    position: absolute;
+    /* position: absolute; */
     height: 25px;
     width: 300px;
     left: 50%;
